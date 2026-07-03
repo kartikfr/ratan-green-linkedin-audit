@@ -1,0 +1,3 @@
+{
+  "rewrites": [{ "source": "/", "destination": "/ratan-green-linkedin-audit.html" }]
+}
