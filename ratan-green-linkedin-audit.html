@@ -642,6 +642,8 @@
     .nav{min-height:72px;padding:0 42px;background:rgba(250,252,248,.96);box-shadow:none}
     .nav-logo img{height:44px}.nb{min-height:72px;padding:0 18px;font-size:11px;letter-spacing:.08em}.nav-end{font-size:10px}
     .nb:focus-visible,.itb:focus-visible{outline:3px solid var(--signal);outline-offset:-3px}
+    .scroll-track{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:transparent;overflow:hidden;pointer-events:none}
+    .scroll-progress{height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--signal),var(--green));transform-origin:left center;transition:width .08s linear}
     #intro{gap:13px;transition:opacity .35s ease,visibility .35s ease}
     .i-logo{width:min(150px,44vw)}.i-label{font-size:10px}.i-heading{font-family:var(--fdisp);font-size:clamp(24px,5vw,36px);font-weight:600;line-height:1.18}.i-heading em{font-style:normal;color:var(--signal)}
 
@@ -714,13 +716,31 @@
     .concept-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:auto;border:1px solid var(--border)}
     .concept-fact{padding:17px 13px;background:#fff}.concept-fact strong{display:block;font-family:var(--fdisp);font-size:21px;color:var(--green)}.concept-fact span{font-family:var(--fh);font-size:8px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-l)}
     .concept-points{margin-top:auto;display:grid;gap:12px;list-style:none;color:rgba(255,255,255,.78)}.concept-points li{border-top:1px solid rgba(255,255,255,.14);padding:13px 0 0;font-size:16px}
+    .asset-section{margin-top:72px;padding-top:52px;border-top:1px solid var(--border)}
+    .asset-section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}
+    .asset-section-head h3{font-family:var(--fdisp);font-size:clamp(30px,4vw,46px);line-height:1;letter-spacing:-.04em;margin-bottom:10px}
+    .asset-section-head p{font-size:17px;color:var(--ink-m);max-width:600px}
+    .asset-section-note{font-family:var(--fh);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-l);white-space:nowrap}
+    .asset-gallery{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+    .asset-frame{margin:0;border:1px solid var(--border);background:#fff;box-shadow:0 18px 55px rgba(7,29,16,.08);transition:transform .25s ease,box-shadow .25s ease}
+    .asset-frame:hover{transform:translateY(-5px);box-shadow:0 26px 70px rgba(7,29,16,.13)}
+    .asset-frame-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;border-bottom:1px solid var(--border)}
+    .asset-frame-label{font-family:var(--fh);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--green)}
+    .asset-status{font-family:var(--fh);font-size:8px;letter-spacing:.08em;text-transform:uppercase;padding:5px 8px;background:var(--blue-l);color:var(--green)}
+    .asset-status.refresh{background:#FFF1D6;color:#8A6200}
+    .asset-canvas{display:block;padding:24px;background:linear-gradient(145deg,#0A2413,#1D6A32);position:relative;overflow:hidden}
+    .asset-canvas::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 49px,rgba(255,255,255,.025) 50px),repeating-linear-gradient(0deg,transparent 0 49px,rgba(255,255,255,.025) 50px)}
+    .asset-canvas img{position:relative;z-index:1;display:block;width:100%;height:auto;box-shadow:0 20px 50px rgba(0,0,0,.28);transition:transform .35s ease}
+    .asset-canvas:hover img{transform:scale(1.012)}
+    .asset-caption{padding:18px 20px 21px;font-size:15px;line-height:1.5;color:var(--ink-m)}
+    .asset-caption strong{display:block;font-family:var(--fdisp);font-size:19px;color:var(--ink);margin-bottom:5px}
 
     @media(max-width:800px){
       .nav{padding:0 16px}.nav-end{display:none}.nb{padding:0 12px}.a-hero{padding:54px 24px 0}.a-hero h1{font-size:clamp(46px,12vw,68px)}.a-hero-sub{font-size:18px}.a-stats{margin:0 -24px;grid-template-columns:1fr 1fr}.a-stat{padding:22px 20px}.a-stat .n{font-size:34px}
-      .story-shell{padding:58px 22px 80px}.story-intro,.story-chapter{grid-template-columns:1fr;gap:18px}.story-intro{margin-bottom:55px}.story-chapter{padding:48px 0}.chapter-kicker{position:static;padding-top:0}.bullet-grid{grid-template-columns:1fr}.strategy-head,.strategy-row{grid-template-columns:1fr}.strategy-head{display:none}.strategy-row>div{border-right:0;padding:9px 18px}.strategy-row{padding:12px 0}.pillar{font-size:21px}.delivery-grid{grid-template-columns:1fr}.delivery-card{min-height:auto}.delivery-step{margin-bottom:30px}.measure-strip{align-items:flex-start;flex-direction:column}.design-concepts{grid-template-columns:1fr}.design-concept{min-height:430px}
+      .story-shell{padding:58px 22px 80px}.story-intro,.story-chapter{grid-template-columns:1fr;gap:18px}.story-intro{margin-bottom:55px}.story-chapter{padding:48px 0}.chapter-kicker{position:static;padding-top:0}.bullet-grid{grid-template-columns:1fr}.strategy-head,.strategy-row{grid-template-columns:1fr}.strategy-head{display:none}.strategy-row>div{border-right:0;padding:9px 18px}.strategy-row{padding:12px 0}.pillar{font-size:21px}.delivery-grid{grid-template-columns:1fr}.delivery-card{min-height:auto}.delivery-step{margin-bottom:30px}.measure-strip{align-items:flex-start;flex-direction:column}.design-concepts,.asset-gallery{grid-template-columns:1fr}.design-concept{min-height:430px}.asset-section-head{align-items:flex-start;flex-direction:column}.asset-section-note{white-space:normal}
     }
     @media(max-width:480px){
-      .nav-logo{margin-right:10px}.nav-sep{display:none}.nb{font-size:10px}.a-hero{padding:44px 18px 0}.a-hero h1{font-size:43px}.a-hero-sub{font-size:17px;margin-bottom:36px}.a-stats{margin:0 -18px}.a-stat{padding:20px 14px}.a-stat .n{font-size:29px}.a-stat .l{font-size:9px}.story-shell{padding:44px 16px 64px}.story-thesis h2{font-size:34px}.story-thesis p,.chapter-lede{font-size:18px}.bullet-card{padding:24px;min-height:auto}.strategy-row>div{padding-left:15px;padding-right:15px}.format-chip{font-size:13px}.itabs{overflow-x:auto;justify-content:flex-start}
+      .nav-logo{margin-right:10px}.nav-sep{display:none}.nb{font-size:10px}.a-hero{padding:44px 18px 0}.a-hero h1{font-size:43px}.a-hero-sub{font-size:17px;margin-bottom:36px}.a-stats{margin:0 -18px}.a-stat{padding:20px 14px}.a-stat .n{font-size:29px}.a-stat .l{font-size:9px}.story-shell{padding:44px 16px 64px}.story-thesis h2{font-size:34px}.story-thesis p,.chapter-lede{font-size:18px}.bullet-card{padding:24px;min-height:auto}.strategy-row>div{padding-left:15px;padding-right:15px}.format-chip{font-size:13px}.itabs{overflow-x:auto;justify-content:flex-start}.asset-canvas{padding:14px}.asset-caption{font-size:14px}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1!important;transform:none!important}}
   </style>
@@ -747,6 +767,7 @@
   <button class="nb active" onclick="showPage('audit',this)"><span class="nb-full">LinkedIn Audit</span><span class="nb-short">Audit</span></button>
   <button class="nb" onclick="showPage('compare',this)"><span class="nb-full">Design Audit</span><span class="nb-short">Design</span></button>
   <div class="nav-end"><span class="nav-dot"></span>xto100x &nbsp;·&nbsp; July 2026</div>
+  <div class="scroll-track" aria-hidden="true"><div class="scroll-progress" id="scrollProgress"></div></div>
 </nav>
 
 <!-- ══ AUDIT PAGE ══ -->
@@ -1142,6 +1163,28 @@
         <ul class="concept-points"><li>Design for generation, not just nameplate capacity</li><li>Make O&amp;M part of the commercial decision</li><li>Explain risk before the buyer has to ask</li></ul>
       </article>
     </div>
+    <section class="asset-section">
+      <div class="asset-section-head">
+        <div><h3>Finished Ratan Green artwork</h3><p>The existing post designs now sit inside the audit as full, presentation-ready creative references.</p></div>
+        <div class="asset-section-note">Open an artwork to inspect it full-size</div>
+      </div>
+      <div class="asset-gallery">
+        <figure class="asset-frame">
+          <div class="asset-frame-head"><span class="asset-frame-label">Founder-led policy post</span><span class="asset-status">Ready to present</span></div>
+          <a class="asset-canvas" href="Ratan Green Assets/Post 1_ Ratan Thought Leadership Post.png" target="_blank" rel="noopener" aria-label="Open the full founder-led policy artwork">
+            <img src="Ratan Green Assets/post-1-thought-leadership.jpg" loading="lazy" decoding="async" alt="Ratan Green founder-led solar policy update design">
+          </a>
+          <figcaption class="asset-caption"><strong>Policy becomes founder authority.</strong>The artwork combines a real site, a clear rule change, and Ajay Singh Shekhawat's expert voice.</figcaption>
+        </figure>
+        <figure class="asset-frame">
+          <div class="asset-frame-head"><span class="asset-frame-label">Brand-trust post</span><span class="asset-status refresh">Refresh figures before publishing</span></div>
+          <a class="asset-canvas" href="Ratan Green Assets/Post 2_ Ratan Info Graphic.png" target="_blank" rel="noopener" aria-label="Open the full brand-trust artwork">
+            <img src="Ratan Green Assets/post-2-brand-trust.jpg" loading="lazy" decoding="async" alt="Ratan Green project proof and brand trust design">
+          </a>
+          <figcaption class="asset-caption"><strong>Physical work makes the claim believable.</strong>Keep the visual structure; update the older 12-year and 30+ MW copy to current approved figures before use.</figcaption>
+        </figure>
+      </div>
+    </section>
   </div>
 
   <!-- POST 1 -->
@@ -1236,12 +1279,27 @@
     }), { threshold: 0.08, rootMargin: '0px 0px -8% 0px' });
     revealBlocks.forEach(el => observer.observe(el));
   }
+  const scrollProgress = document.getElementById('scrollProgress');
+  let scrollTicking = false;
+  function updateScrollProgress() {
+    const available = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    const progress = Math.min(100, Math.max(0, (window.scrollY / available) * 100));
+    scrollProgress.style.width = progress + '%';
+    scrollTicking = false;
+  }
+  function queueScrollProgress() {
+    if (!scrollTicking) { scrollTicking = true; requestAnimationFrame(updateScrollProgress); }
+  }
+  window.addEventListener('scroll', queueScrollProgress, { passive: true });
+  window.addEventListener('resize', queueScrollProgress);
+  updateScrollProgress();
   function showPage(id, btn) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.nb').forEach(b => b.classList.remove('active'));
     document.getElementById('page-' + id).classList.add('active');
     btn.classList.add('active');
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    queueScrollProgress();
   }
   function showPane(id, btn) {
     document.querySelectorAll('.pane').forEach(p => p.classList.remove('active'));
