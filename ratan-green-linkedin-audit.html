@@ -6,7 +6,7 @@
   <title>Ratan Green Energy Services: LinkedIn Audit by xto100x</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Source+Sans+3:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
     /* ── TOKENS ── */
     :root {
@@ -219,10 +219,6 @@
 
     /* ══ AUDIT BODY ══ */
     .a-body { max-width: 1080px; margin: 0 auto; padding: 64px 36px 96px; }
-    .audit-source { margin:0 0 28px; padding:14px 18px; border:1px solid #CFE5D4; border-radius:12px; background:#F4FAF5; font-family:var(--fb); font-size:12px; line-height:1.7; color:var(--ink-l); }
-    .audit-source strong { color:var(--green); font-family:var(--fh); }
-    .audit-source a { color:var(--green); font-weight:600; text-decoration:none; border-bottom:1px solid rgba(20,122,11,.3); }
-
     /* Section header */
     .sh { display: flex; align-items: center; gap: 14px; margin-bottom: 32px; }
     .sh-num {
@@ -615,6 +611,118 @@
     .tg { background:#EBF8F1; color:var(--green); padding:4px 11px; border-radius:7px; font-family:var(--fh); font-size:11px; font-weight:600; }
     @media (max-width:860px) { .cc-single{padding:28px 24px} .pane{padding:40px 20px 64px} .ov-stats{grid-template-columns:1fr 1fr} .dg{grid-template-columns:1fr 1fr} .itb{padding:18px 18px;font-size:11.5px} .c-hero{padding:48px 24px 40px} }
     @media (max-width:600px) { .cc-single{padding:20px 16px} .pane{padding:28px 16px 56px} .p-intro h2{font-size:28px} .ov-stats{grid-template-columns:1fr 1fr;gap:12px} .dg{grid-template-columns:1fr;gap:18px} .itb{padding:0 14px;font-size:11px;min-height:52px;display:flex;align-items:center;flex-shrink:0} .itb::after{bottom:0} .itabs{justify-content:flex-start} .c-hero{padding:36px 16px 32px} }
+    /* ══ 2026 EDITORIAL REDESIGN ══ */
+    :root {
+      --blue:#1D7A33;
+      --blue-d:#0B3A1B;
+      --blue-l:#E7F4E9;
+      --gold:#E0B92F;
+      --gold-d:#A8850F;
+      --gold-l:#FFF8D9;
+      --navy:#071D10;
+      --navy-m:#0D2B18;
+      --navy-l:#17452A;
+      --bg:#F3F6F0;
+      --bg2:#E7EDE3;
+      --surface:#FFFFFF;
+      --border:#CFD9CC;
+      --border-m:#AEBEAA;
+      --ink:#102017;
+      --ink-m:#304538;
+      --ink-l:#657568;
+      --green:#1D7A33;
+      --signal:#B8E24C;
+      --fdisp:'Space Grotesk',system-ui,sans-serif;
+      --fh:'IBM Plex Mono',ui-monospace,monospace;
+      --fb:'Source Sans 3',system-ui,sans-serif;
+      --grad-hero:linear-gradient(118deg,#061A0D 0%,#0D341B 62%,#185E2D 100%);
+      --grad-gold:linear-gradient(90deg,#F4D663 0%,#B8E24C 100%);
+    }
+    body{font-size:17px;line-height:1.62;letter-spacing:0;background:var(--bg);color:var(--ink)}
+    .nav{min-height:72px;padding:0 42px;background:rgba(250,252,248,.96);box-shadow:none}
+    .nav-logo img{height:44px}.nb{min-height:72px;padding:0 18px;font-size:11px;letter-spacing:.08em}.nav-end{font-size:10px}
+    .nb:focus-visible,.itb:focus-visible{outline:3px solid var(--signal);outline-offset:-3px}
+    #intro{gap:13px;transition:opacity .35s ease,visibility .35s ease}
+    .i-logo{width:min(150px,44vw)}.i-label{font-size:10px}.i-heading{font-family:var(--fdisp);font-size:clamp(24px,5vw,36px);font-weight:600;line-height:1.18}.i-heading em{font-style:normal;color:var(--signal)}
+
+    .a-hero{text-align:left;padding:74px 56px 0;background:var(--grad-hero)}
+    .a-hero::before{left:auto;right:-12%;top:-60%;transform:none;width:720px;height:720px;background:repeating-radial-gradient(circle,rgba(184,226,76,.13) 0 1px,transparent 1px 30px)}
+    .a-hero::after{right:0;bottom:0;width:46%;height:100%;background:linear-gradient(135deg,transparent 40%,rgba(184,226,76,.08))}
+    .a-eyebrow{margin-bottom:20px;color:rgba(255,255,255,.62)}
+    .a-hero h1{max-width:970px;font-size:clamp(48px,7vw,92px);font-weight:600;line-height:.98;letter-spacing:-.055em;margin-bottom:26px}
+    .a-hero h1 .brand{display:inline;font-style:normal;color:var(--signal);background:none;-webkit-text-fill-color:initial}
+    .a-hero-sub{margin:0 0 52px;max-width:710px;font-size:20px;font-weight:400;line-height:1.55;color:rgba(255,255,255,.74)}
+    .a-stats{margin:0 -56px;text-align:left;background:rgba(1,15,7,.42);border-color:rgba(255,255,255,.11)}
+    .a-stat{text-align:left;padding:27px 30px}.a-stat .n{font-family:var(--fdisp);font-size:42px;font-weight:600;letter-spacing:-.04em}.a-stat .l{font-family:var(--fh);font-size:10px;letter-spacing:.08em;color:rgba(255,255,255,.62)}
+
+    #page-audit>.a-body{display:none}
+    .story-shell{max-width:1180px;margin:0 auto;padding:82px 36px 110px}
+    .story-intro{display:grid;grid-template-columns:180px 1fr;gap:44px;align-items:start;margin-bottom:82px}
+    .story-kicker,.chapter-kicker{font-family:var(--fh);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--green);padding-top:9px}
+    .story-thesis h2{font-family:var(--fdisp);font-size:clamp(34px,5vw,58px);line-height:1.06;letter-spacing:-.045em;font-weight:600;max-width:890px;margin-bottom:22px}
+    .story-thesis p{font-size:20px;line-height:1.55;color:var(--ink-m);max-width:760px}
+    .story-chapter{display:grid;grid-template-columns:180px 1fr;gap:44px;padding:64px 0;border-top:1px solid var(--border)}
+    .chapter-kicker{position:sticky;top:98px;align-self:start}
+    .chapter-copy h3{font-family:var(--fdisp);font-size:clamp(31px,4vw,48px);line-height:1.05;letter-spacing:-.04em;margin-bottom:14px}
+    .chapter-lede{font-size:19px;line-height:1.55;color:var(--ink-m);max-width:760px;margin-bottom:34px}
+    .bullet-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--border);border:1px solid var(--border)}
+    .bullet-card{background:var(--surface);padding:30px;min-height:180px;transition:background .2s,transform .2s}
+    .bullet-card:hover{background:#F9FCF6;transform:translateY(-2px)}
+    .bullet-card.good{border-top:3px solid var(--green)}.bullet-card.leak{border-top:3px solid #C65B45}
+    .bullet-card .card-label{font-family:var(--fh);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-l);margin-bottom:15px}
+    .bullet-card h4{font-family:var(--fdisp);font-size:22px;line-height:1.18;letter-spacing:-.025em;margin-bottom:10px}
+    .bullet-card ul{list-style:none;display:grid;gap:8px;color:var(--ink-m);font-size:16px;line-height:1.45}
+    .bullet-card li{position:relative;padding-left:18px}.bullet-card li::before{content:'→';position:absolute;left:0;color:var(--green);font-weight:700}
+
+    .strategy-board{border:1px solid var(--border);background:var(--surface)}
+    .strategy-head,.strategy-row{display:grid;grid-template-columns:1.25fr .55fr 1.2fr;align-items:center}
+    .strategy-head{background:var(--navy);color:#fff;font-family:var(--fh);font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+    .strategy-head>div,.strategy-row>div{padding:16px 22px;border-right:1px solid var(--border)}
+    .strategy-head>div{border-color:rgba(255,255,255,.15)}.strategy-head>div:last-child,.strategy-row>div:last-child{border-right:0}
+    .strategy-row{border-top:1px solid var(--border)}
+    .strategy-row:first-of-type{border-top:0}.strategy-row:hover{background:#F5FAF2}
+    .pillar{font-family:var(--fdisp);font-size:20px;font-weight:600;letter-spacing:-.02em}.cadence{font-family:var(--fh);font-size:12px;color:var(--green);font-weight:600}.outcome{font-size:16px;color:var(--ink-m)}
+    .format-strip{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:20px}
+    .format-strip strong{font-family:var(--fh);font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-l);margin-right:6px}
+    .format-chip{border:1px solid var(--border-m);padding:7px 11px;background:transparent;font-size:14px;color:var(--ink-m)}
+
+    .delivery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .delivery-card{padding:30px;background:var(--navy);color:#fff;min-height:330px;position:relative;overflow:hidden}
+    .delivery-card::after{content:'';position:absolute;width:180px;height:180px;border:1px solid rgba(184,226,76,.16);border-radius:50%;right:-80px;bottom:-80px}
+    .delivery-step{font-family:var(--fh);font-size:10px;letter-spacing:.11em;color:var(--signal);text-transform:uppercase;margin-bottom:50px}
+    .delivery-card h4{font-family:var(--fdisp);font-size:26px;line-height:1.1;margin-bottom:18px}
+    .delivery-card ul{list-style:none;display:grid;gap:12px;font-size:16px;color:rgba(255,255,255,.72)}
+    .delivery-card li{padding-left:18px;position:relative}.delivery-card li::before{content:'•';position:absolute;left:0;color:var(--signal)}
+    .measure-strip{margin-top:18px;padding:26px 30px;background:var(--signal);display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .measure-strip strong{font-family:var(--fdisp);font-size:23px;letter-spacing:-.025em}.measure-list{font-family:var(--fh);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#17320F}
+    .reveal{opacity:0;transform:translateY(20px)}.reveal.in{opacity:1;transform:none;transition:opacity .55s ease,transform .55s ease}
+
+    .c-hero{background:var(--grad-hero);padding:60px 32px 48px}.c-eyebrow-badge{border-radius:0;background:var(--signal);color:var(--navy);font-family:var(--fh)}
+    .c-hero p{font-size:18px;max-width:650px}.c-pills{gap:8px}.cp{border-radius:0;font-family:var(--fh);font-size:10px}
+    .itb{font-family:var(--fh);font-size:11px}.p-intro h2,.cc-hd-text h3{font-family:var(--fdisp)}
+    .cc,.ov-tbl-wrap{border-radius:0}.cc-single{background:#EDF2E9}.di span,.ov-tbl td{font-family:var(--fb);font-size:15px;line-height:1.55}
+    #page-compare .itabs,#page-compare #p1-pane,#page-compare #p2-pane{display:none!important}
+    .design-concepts{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:42px}
+    .design-concept{min-height:470px;padding:34px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+    .design-concept.proof{background:#F3F7EF;border:1px solid var(--border)}
+    .design-concept.pov{background:var(--navy);color:#fff}
+    .concept-tag{font-family:var(--fh);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--green);margin-bottom:56px}
+    .pov .concept-tag{color:var(--signal)}
+    .design-concept h3{font-family:var(--fdisp);font-size:clamp(34px,4vw,50px);line-height:1;letter-spacing:-.05em;max-width:520px;margin-bottom:22px}
+    .design-concept h3 em{font-style:normal;color:var(--green)}.pov h3 em{color:var(--signal)}
+    .concept-copy{font-size:17px;line-height:1.5;color:var(--ink-m);max-width:480px}.pov .concept-copy{color:rgba(255,255,255,.7)}
+    .concept-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:auto;border:1px solid var(--border)}
+    .concept-fact{padding:17px 13px;background:#fff}.concept-fact strong{display:block;font-family:var(--fdisp);font-size:21px;color:var(--green)}.concept-fact span{font-family:var(--fh);font-size:8px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-l)}
+    .concept-points{margin-top:auto;display:grid;gap:12px;list-style:none;color:rgba(255,255,255,.78)}.concept-points li{border-top:1px solid rgba(255,255,255,.14);padding:13px 0 0;font-size:16px}
+
+    @media(max-width:800px){
+      .nav{padding:0 16px}.nav-end{display:none}.nb{padding:0 12px}.a-hero{padding:54px 24px 0}.a-hero h1{font-size:clamp(46px,12vw,68px)}.a-hero-sub{font-size:18px}.a-stats{margin:0 -24px;grid-template-columns:1fr 1fr}.a-stat{padding:22px 20px}.a-stat .n{font-size:34px}
+      .story-shell{padding:58px 22px 80px}.story-intro,.story-chapter{grid-template-columns:1fr;gap:18px}.story-intro{margin-bottom:55px}.story-chapter{padding:48px 0}.chapter-kicker{position:static;padding-top:0}.bullet-grid{grid-template-columns:1fr}.strategy-head,.strategy-row{grid-template-columns:1fr}.strategy-head{display:none}.strategy-row>div{border-right:0;padding:9px 18px}.strategy-row{padding:12px 0}.pillar{font-size:21px}.delivery-grid{grid-template-columns:1fr}.delivery-card{min-height:auto}.delivery-step{margin-bottom:30px}.measure-strip{align-items:flex-start;flex-direction:column}.design-concepts{grid-template-columns:1fr}.design-concept{min-height:430px}
+    }
+    @media(max-width:480px){
+      .nav-logo{margin-right:10px}.nav-sep{display:none}.nb{font-size:10px}.a-hero{padding:44px 18px 0}.a-hero h1{font-size:43px}.a-hero-sub{font-size:17px;margin-bottom:36px}.a-stats{margin:0 -18px}.a-stat{padding:20px 14px}.a-stat .n{font-size:29px}.a-stat .l{font-size:9px}.story-shell{padding:44px 16px 64px}.story-thesis h2{font-size:34px}.story-thesis p,.chapter-lede{font-size:18px}.bullet-card{padding:24px;min-height:auto}.strategy-row>div{padding-left:15px;padding-right:15px}.format-chip{font-size:13px}.itabs{overflow-x:auto;justify-content:flex-start}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1!important;transform:none!important}}
   </style>
 </head>
 <body>
@@ -624,8 +732,8 @@
   <div class="i-logo"><img src="Ratan Green Assets/Audit Image/ratan_green_energy_services_logo.jpeg" alt="Ratan Green Energy Services"></div>
   <div class="i-brand-name">RGESPL</div>
   <div class="i-rule"></div>
-  <div class="i-label">LinkedIn Audit &amp; Growth Plan</div>
-  <div class="i-heading">An evidence-led review of<br>what works and <em>what unlocks growth.</em></div>
+  <div class="i-label">LinkedIn Strategy &amp; Design Audit</div>
+  <div class="i-heading">From public proof<br>to <em>commercial momentum.</em></div>
   <div class="i-bar"><div class="i-fill"></div></div>
   <div class="i-by">Prepared by <strong>xto100x</strong> &nbsp;·&nbsp; July 2026</div>
 </div>
@@ -637,6 +745,7 @@
   </a>
   <div class="nav-sep"></div>
   <button class="nb active" onclick="showPage('audit',this)"><span class="nb-full">LinkedIn Audit</span><span class="nb-short">Audit</span></button>
+  <button class="nb" onclick="showPage('compare',this)"><span class="nb-full">Design Audit</span><span class="nb-short">Design</span></button>
   <div class="nav-end"><span class="nav-dot"></span>xto100x &nbsp;·&nbsp; July 2026</div>
 </nav>
 
@@ -645,19 +754,117 @@
 
   <div class="a-hero">
     <div class="a-eyebrow"><span></span>July 2026 &nbsp;·&nbsp; Prepared by xto100x<span></span></div>
-    <h1>LinkedIn Audit<br><span class="brand">Ratan Green Energy</span></h1>
-    <p class="a-hero-sub">14,280 followers. 190+ MW commissioned. 850+ clients. Ratan Green already has reach and proof; the next opportunity is turning that attention into stronger authority, qualified conversations, and measurable demand.</p>
+    <h1><span class="brand">190+ MW</span> of proof. Now turn it into demand.</h1>
+    <p class="a-hero-sub">Ratan Green already has attention, operating credibility, and an active page. The next move is a sharper LinkedIn system that creates buyer trust and qualified conversations.</p>
     <div class="a-stats">
       <div class="a-stat"><div class="n">14.3K</div><div class="l">LinkedIn Followers</div></div>
-      <div class="a-stat"><div class="n">6.8<em>/10</em></div><div class="l">Overall Score</div></div>
-      <div class="a-stat"><div class="n">30<em>%</em></div><div class="l">Project Proof in Sample</div></div>
-      <div class="a-stat"><div class="n">33</div><div class="l">Avg Reactions / Recent Post</div></div>
+      <div class="a-stat"><div class="n">190<em>+</em></div><div class="l">MW Commissioned</div></div>
+      <div class="a-stat"><div class="n">850<em>+</em></div><div class="l">Clients Served</div></div>
+      <div class="a-stat"><div class="n">6.8<em>/10</em></div><div class="l">Audit Score</div></div>
     </div>
   </div>
 
-  <div class="a-body">
+  <main class="story-shell">
+    <section class="story-intro reveal">
+      <div class="story-kicker">The verdict</div>
+      <div class="story-thesis">
+        <h2>Ratan Green does not need more noise. It needs a content system that sells its proof.</h2>
+        <p>The page is active and credible. Growth now comes from better packaging, leadership voice, clearer conversion paths, and consistent distribution.</p>
+      </div>
+    </section>
 
-    <div class="audit-source"><strong>Audit basis:</strong> Public information from the <a href="https://www.linkedin.com/company/ratan-green-energy-services/" target="_blank" rel="noopener">Ratan Green LinkedIn company page</a> and <a href="https://ratangreenenergy.com/about/aboutus" target="_blank" rel="noopener">official company website</a>, reviewed 21 July 2026. Content-mix percentages and average reactions use the 10 most recent publicly visible posts in the reviewed sample; they are directional, not private LinkedIn analytics.</div>
+    <section class="story-chapter reveal">
+      <div class="chapter-kicker">Current position</div>
+      <div class="chapter-copy">
+        <h3>What is already working</h3>
+        <p class="chapter-lede">The raw material is strong. Keep it, sharpen it, and make the buyer outcome impossible to miss.</p>
+        <div class="bullet-grid">
+          <article class="bullet-card good">
+            <div class="card-label">Proof</div>
+            <h4>Real projects, real numbers</h4>
+            <ul><li>Capacity, generation and CO₂ impact are already shared</li><li>Project photography adds credibility</li></ul>
+          </article>
+          <article class="bullet-card good">
+            <div class="card-label">Momentum</div>
+            <h4>An active publishing rhythm</h4>
+            <ul><li>Project, hiring and leadership updates are frequent</li><li>14.3K followers provide immediate distribution</li></ul>
+          </article>
+          <article class="bullet-card good">
+            <div class="card-label">Authority</div>
+            <h4>A defensible company story</h4>
+            <ul><li>190+ MW commissioned across India</li><li>850+ clients and 13+ years of operating experience</li></ul>
+          </article>
+          <article class="bullet-card good">
+            <div class="card-label">Network</div>
+            <h4>People and partners are visible</h4>
+            <ul><li>Leadership and employees are regularly tagged</li><li>Vendor posts prove the page can drive action</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-chapter reveal">
+      <div class="chapter-kicker">Growth leaks</div>
+      <div class="chapter-copy">
+        <h3>What is holding the page back</h3>
+        <p class="chapter-lede">The issue is not activity. It is focus: strong evidence is present, but the commercial story gets diluted.</p>
+        <div class="bullet-grid">
+          <article class="bullet-card leak">
+            <div class="card-label">01 · Packaging</div>
+            <h4>Proof is buried</h4>
+            <ul><li>Key outcomes sit deep inside long captions</li><li>Lead with savings, generation or business impact</li></ul>
+          </article>
+          <article class="bullet-card leak">
+            <div class="card-label">02 · Leadership</div>
+            <h4>Leaders are tagged, not heard</h4>
+            <ul><li>Founder experience is not yet a recurring content pillar</li><li>Publish clear opinions and field lessons</li></ul>
+          </article>
+          <article class="bullet-card leak">
+            <div class="card-label">03 · Conversion</div>
+            <h4>The next step is unclear</h4>
+            <ul><li>Most posts stop at awareness</li><li>Create separate CTAs for buyers, vendors and careers</li></ul>
+          </article>
+          <article class="bullet-card leak">
+            <div class="card-label">04 · Signal</div>
+            <h4>Too many tags, too much occasion content</h4>
+            <ul><li>Long hashtag blocks weaken clarity</li><li>Protect the feed's B2B authority</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-chapter reveal">
+      <div class="chapter-kicker">LinkedIn strategy</div>
+      <div class="chapter-copy">
+        <h3>Build the proof-to-pipeline engine</h3>
+        <p class="chapter-lede">Four repeatable pillars. One clear audience per post. One measurable action.</p>
+        <div class="strategy-board">
+          <div class="strategy-head"><div>Content pillar</div><div>Cadence</div><div>Business outcome</div></div>
+          <div class="strategy-row"><div class="pillar">Project proof</div><div class="cadence">4× / month</div><div class="outcome">Turn commissioned work into buyer confidence</div></div>
+          <div class="strategy-row"><div class="pillar">Founder point of view</div><div class="cadence">2× / month</div><div class="outcome">Build authority around policy, risk and performance</div></div>
+          <div class="strategy-row"><div class="pillar">Buyer education</div><div class="cadence">3× / month</div><div class="outcome">Help prospects understand economics and decisions</div></div>
+          <div class="strategy-row"><div class="pillar">People &amp; partners</div><div class="cadence">2× / month</div><div class="outcome">Strengthen distribution, trust and hiring</div></div>
+        </div>
+        <div class="format-strip"><strong>Use more</strong><span class="format-chip">Document carousels</span><span class="format-chip">Site walkthroughs</span><span class="format-chip">Engineer explainers</span><span class="format-chip">Client voices</span></div>
+      </div>
+    </section>
+
+    <section class="story-chapter reveal">
+      <div class="chapter-kicker">Where we come in</div>
+      <div class="chapter-copy">
+        <h3>xto100x turns the strategy into a working system</h3>
+        <p class="chapter-lede">We own the editorial discipline from raw project material to published story and monthly commercial learning.</p>
+        <div class="delivery-grid">
+          <article class="delivery-card"><div class="delivery-step">Phase 01</div><h4>Set the system</h4><ul><li>Content pillars and monthly calendar</li><li>CTA routes and lead tracking</li><li>Case-study and founder templates</li></ul></article>
+          <article class="delivery-card"><div class="delivery-step">Phase 02</div><h4>Ship the story</h4><ul><li>Hooks, captions and carousels</li><li>Video scripts and site briefs</li><li>Leadership and employee distribution</li></ul></article>
+          <article class="delivery-card"><div class="delivery-step">Phase 03</div><h4>Prove the impact</h4><ul><li>Test hooks and conversion paths</li><li>Track qualified conversations</li><li>Improve the next month's plan</li></ul></article>
+        </div>
+        <div class="measure-strip"><strong>Measure business movement, not just likes.</strong><div class="measure-list">Enquiries · Qualified DMs · Meetings · Opportunities</div></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="a-body">
 
     <!-- SCORECARD -->
     <div class="score-banner">
@@ -872,55 +1079,73 @@
 <div id="page-compare" class="page">
 
   <div class="c-hero">
-    <div class="c-eyebrow-badge">Creative Redesign</div>
+    <div class="c-eyebrow-badge">Design Audit</div>
     <div class="c-hero-lockup">
       <img class="c-hero-logo" src="Ratan Green Assets/Audit Image/ratan_green_energy_services_logo.jpeg" alt="Ratan Green Energy Services">
       <span class="c-hero-x">×</span>
       <span class="c-hero-partner">xto100x</span>
     </div>
-    <p>Two original posts designed from scratch for RGESPL, showing what the content looks like with a unified design system behind it.</p>
+    <p>Two practical examples of how Ratan Green can make complex proof easier to scan, trust, and remember.</p>
     <div class="c-pills">
       <div class="cp gold">2 New Posts</div>
-      <div class="cp">Policy Update Concept</div>
-      <div class="cp">Brand Trust Concept</div>
-      <div class="cp">xto100x Originals</div>
+      <div class="cp">Founder Authority</div>
+      <div class="cp">Project Proof</div>
+      <div class="cp">One Visual System</div>
     </div>
   </div>
 
   <div class="itabs">
-    <button class="itb" onclick="showPane('ov-pane',this)">Overview</button>
-    <button class="itb active" onclick="showPane('p1-pane',this)">Post 1 (Own Idea)</button>
+    <button class="itb active" onclick="showPane('ov-pane',this)">Overview</button>
+    <button class="itb" onclick="showPane('p1-pane',this)">Post 1 (Own Idea)</button>
     <button class="itb" onclick="showPane('p2-pane',this)">Post 2 (Own Idea)</button>
   </div>
 
   <!-- OVERVIEW -->
-  <div id="ov-pane" class="pane">
+  <div id="ov-pane" class="pane active">
     <div class="p-intro">
-      <h2>What xto100x Delivered for RGESPL</h2>
-      <p>Two posts designed from scratch: a policy update post featuring MD Ajay Singh Shekhawat, and a brand trust post anchored in 12 years of ISO-certified delivery.</p>
+      <h2>What the design system should improve</h2>
+      <p>Make every post easier to recognize, scan, and trust—without losing the technical proof that makes Ratan Green credible.</p>
     </div>
     <div class="ov-stats">
       <div class="os"><div class="n">2</div><div class="l">Posts designed</div></div>
-      <div class="os"><div class="n" style="font-size:28px;">Policy + Brand</div><div class="l">Concepts covered</div></div>
-      <div class="os"><div class="n">0<em>→</em>2</div><div class="l">Founder posts on the page</div></div>
+      <div class="os"><div class="n" style="font-size:28px;">Proof + POV</div><div class="l">Concepts covered</div></div>
+      <div class="os"><div class="n">1</div><div class="l">Recognisable visual system</div></div>
     </div>
     <div class="ov-tbl-wrap">
       <table class="ov-tbl">
         <thead><tr><th>Design Element</th><th>RGESPL Current</th><th>xto100x Design</th></tr></thead>
         <tbody>
-          <tr><td>Visual Identity</td><td><span class="tb">Inconsistent templates post to post</span></td><td><span class="tg">Forest green + yellow accent locked, consistent logo placement</span></td></tr>
-          <tr><td>Typography</td><td><span class="tb">Font shifts across posts</span></td><td><span class="tg">Montserrat headings + Poppins body on every design</span></td></tr>
-          <tr><td>Founder Presence</td><td><span class="tb">Ajay Singh Shekhawat not featured in company posts</span></td><td><span class="tg">MD and CEO introduced with photo, title, credentials, and award</span></td></tr>
-          <tr><td>Proof / Credentials</td><td><span class="tb">ISO certification not referenced in content</span></td><td><span class="tg">ISO 9001:2015 and 12-year track record as central post anchors</span></td></tr>
-          <tr><td>Information Hierarchy</td><td><span class="tb">Generic awareness copy, low scannability</span></td><td><span class="tg">Bold outcome headline, structured bullets, stat bar at the close</span></td></tr>
-          <tr><td>Call to Action</td><td><span class="tb">Phone number on every post regardless of content</span></td><td><span class="tg">Website URL for top-of-funnel content, matched to content stage</span></td></tr>
+          <tr><td>Visual Identity</td><td><span class="tb">Multiple styles compete in the feed</span></td><td><span class="tg">Forest green, signal yellow, and one consistent grid</span></td></tr>
+          <tr><td>Typography</td><td><span class="tb">Dense text and uneven hierarchy</span></td><td><span class="tg">Space Grotesk headlines with Source Sans 3 body copy</span></td></tr>
+          <tr><td>Founder Presence</td><td><span class="tb">Leadership is tagged more than quoted</span></td><td><span class="tg">Founder viewpoint becomes the visual and editorial anchor</span></td></tr>
+          <tr><td>Project Proof</td><td><span class="tb">Strong numbers are buried in captions</span></td><td><span class="tg">Capacity, generation, savings, and impact lead the design</span></td></tr>
+          <tr><td>Information Hierarchy</td><td><span class="tb">Several messages fight for attention</span></td><td><span class="tg">One outcome headline, three proof points, one CTA</span></td></tr>
+          <tr><td>Call to Action</td><td><span class="tb">The next step changes by post</span></td><td><span class="tg">One tracked action for buyers, vendors, or candidates</span></td></tr>
         </tbody>
       </table>
+    </div>
+    <div class="design-concepts">
+      <article class="design-concept proof">
+        <div class="concept-tag">Concept 01 · Project proof</div>
+        <h3><em>560 kW.</em> One clear business case.</h3>
+        <p class="concept-copy">Lead with the outcome. Let capacity, annual generation, financial value, and avoided emissions do the selling.</p>
+        <div class="concept-facts">
+          <div class="concept-fact"><strong>7.84L</strong><span>Units / year</span></div>
+          <div class="concept-fact"><strong>₹57.2L</strong><span>Projected value</span></div>
+          <div class="concept-fact"><strong>500T</strong><span>CO₂ reduced</span></div>
+        </div>
+      </article>
+      <article class="design-concept pov">
+        <div class="concept-tag">Concept 02 · Founder point of view</div>
+        <h3>What <em>190+ MW</em> taught us about performance.</h3>
+        <p class="concept-copy">A founder-led series that turns operating experience into a point of view buyers can trust.</p>
+        <ul class="concept-points"><li>Design for generation, not just nameplate capacity</li><li>Make O&amp;M part of the commercial decision</li><li>Explain risk before the buyer has to ask</li></ul>
+      </article>
     </div>
   </div>
 
   <!-- POST 1 -->
-  <div id="p1-pane" class="pane active">
+  <div id="p1-pane" class="pane">
     <div class="p-intro">
       <h2>Post 1: Solar Cells Just Got A New Rule</h2>
       <p>A policy update post featuring MD Ajay Singh Shekhawat, explaining what India's domestic cell sourcing mandate means for rooftop solar customers, and positioning RGESPL as the compliant, trusted installer.</p>
@@ -988,11 +1213,29 @@
 </div><!-- /page-compare -->
 
 <footer>
-  Prepared by <strong>xto100x</strong> for <span class="brand-footer">Ratan Green Energy Services</span> &nbsp;·&nbsp; LinkedIn Audit + Growth Plan &nbsp;·&nbsp; July 2026
+  Prepared by <strong>xto100x</strong> for <span class="brand-footer">Ratan Green Energy Services</span> &nbsp;·&nbsp; LinkedIn Strategy + Design Audit &nbsp;·&nbsp; July 2026
 </footer>
 
 <script>
-  setTimeout(() => document.getElementById('intro').classList.add('out'), 3400);
+  const intro = document.getElementById('intro');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let introSeen = false;
+  try { introSeen = sessionStorage.getItem('ratan-audit-intro') === '1'; } catch (e) {}
+  if (introSeen || reduceMotion) {
+    intro.classList.add('out');
+  } else {
+    try { sessionStorage.setItem('ratan-audit-intro','1'); } catch (e) {}
+    setTimeout(() => intro.classList.add('out'), 1150);
+  }
+  const revealBlocks = document.querySelectorAll('.reveal');
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    revealBlocks.forEach(el => el.classList.add('in'));
+  } else {
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('in'); observer.unobserve(entry.target); }
+    }), { threshold: 0.08, rootMargin: '0px 0px -8% 0px' });
+    revealBlocks.forEach(el => observer.observe(el));
+  }
   function showPage(id, btn) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.nb').forEach(b => b.classList.remove('active'));
